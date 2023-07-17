@@ -21,7 +21,7 @@ def get_list_of_pairs_eq_target(integers_lst = [], target = 0):
   remains = {}
   for val in integers_lst:
     if val in remains:
-      accepted_sums.append([val, remains[val]])
+      accepted_sums.append([remains[val], val])
       del remains[val]
     else:
       remains[target - val] = val
@@ -33,7 +33,7 @@ def print_pretty(list_of_pairs):
 
 if __name__ == "__main__":
     if len(sys.argv) != 3:
-        print("Usage: python Project_runtime.py <list_of_integers> <target>")
+        print("Usage: python main.py <list_of_integers> <target>")
         sys.exit(1)
 
     list_of_integers = sys.argv[1]
