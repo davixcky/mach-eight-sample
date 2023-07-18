@@ -11,7 +11,9 @@ Original file is located at
 
 
 ## Problem Thinking
-We know that sum is basically `a + b = c`, so we have to calculate and get two nums from the list that sums `c`. The way to access to each of these numbers is by iterating over the list. Once we access over each value, we could say we have `a` (and `c` which is the target), so we can substract and know what is the missing number, `b = c - a`. By doing this we can know easily what is the missing number to complete the pair. If we never found the missing number, means it didn't have a pair.
+We know that sum is basically `a + b = c`, so we have to calculate and get two nums from the list that sums `c`. The way to access to each of these numbers is by iterating over the list. 
+Once we access over each value, we could say we have `a` (and `c` which is the target), so we can substract and know what is the missing number, `b = c - a`.
+By doing this we can know easily what is the missing number to complete the pair. If we never found the missing number, means it didn't have a pair.
 """
 
 import sys
